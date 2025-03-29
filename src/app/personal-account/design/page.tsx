@@ -12,6 +12,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 export default function DesignPage() {
@@ -71,6 +73,14 @@ export default function DesignPage() {
                                   );
                                 })}
                               </CarouselContent>
+                              <CarouselPrevious
+                                className={"left-5"}
+                                variant={"outline"}
+                              />
+                              <CarouselNext
+                                className={"right-5"}
+                                variant={"outline"}
+                              />
                             </Carousel>
                           )}
                         </AccordionContent>
