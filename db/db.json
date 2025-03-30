@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "avatar": "/avatar/DefaultAvatar.jpg",
+      "name": "John Doe",
+      "email": "john_doe@email.com"
+    },
+    {
+      "avatar": "/avatar/DefaultAvatar.jpg",
+      "name": "Elizabet Doe",
+      "email": "elizabet_doe@email.com"
+    },
+    {
+      "avatar": "/avatar/DefaultAvatar.jpg",
+      "name": "Kevin Doe",
+      "email": "kevin_doe@email.com"
+    }
+  ]
+}

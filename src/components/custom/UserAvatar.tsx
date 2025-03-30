@@ -1,6 +1,5 @@
 "use client";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import DefaultAvatar from "@/assets/DefaultAvatar.jpg";
 
 export function UserAvatar({
   avatar,
@@ -13,7 +12,7 @@ export function UserAvatar({
   ).toUpperCase();
   return (
     <Avatar className={className}>
-      <AvatarImage src={avatar || DefaultAvatar.src} />
+      <AvatarImage src={avatar} />
       <AvatarFallback>{avatarFallback}</AvatarFallback>
     </Avatar>
   );
