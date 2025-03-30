@@ -6,12 +6,13 @@ export function UserAvatar({
   avatar,
   userFirstName = "A",
   userLastName = "V",
+  className,
 }: Props) {
   const avatarFallback: string = (
     userFirstName.charAt(0) + userLastName.charAt(0)
   ).toUpperCase();
   return (
-    <Avatar>
+    <Avatar className={className}>
       <AvatarImage src={avatar || DefaultAvatar.src} />
       <AvatarFallback>{avatarFallback}</AvatarFallback>
     </Avatar>
@@ -22,4 +23,5 @@ type Props = {
   avatar?: string;
   userFirstName?: string;
   userLastName?: string;
+  className?: string;
 };
