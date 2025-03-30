@@ -1,13 +1,14 @@
 import React from "react";
-import { Container } from "@/components/custom/Container";
 import { Typography } from "@/components/custom/Typography";
+import { UsersTable } from "@/components/custom/UsersTable";
 
 export default function AdminPanel() {
   return (
-    <Container className={"max-w-screen-xl mx-auto px-10"}>
-      <Typography variant={"h1"} as={"h1"} className={"text-center"}>
+    <>
+      <Typography variant="h1" as="h1" className="text-center">
         Панель администратора
       </Typography>
-    </Container>
+      <UsersTable />
+    </>
   );
 }
