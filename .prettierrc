@@ -1,1 +1,13 @@
-{}
+{
+  "jsxSingleQuote": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "quoteProps": "as-needed",
+  "rules": {
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "props": "never", "children": "never" }
+    ]
+  }
+}
