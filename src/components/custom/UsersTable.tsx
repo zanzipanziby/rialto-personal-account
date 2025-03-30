@@ -12,7 +12,7 @@ import { Typography } from "@/components/custom/Typography";
 import DefaultAvatar from "@/assets/DefaultAvatar.jpg";
 import { Button } from "@/components/ui/button";
 
-export const UsersTable = ({}: Props) => {
+export const UsersTable = ({ className }: Props) => {
   const users = [
     {
       avatar: DefaultAvatar,
@@ -31,7 +31,7 @@ export const UsersTable = ({}: Props) => {
     },
   ];
   return (
-    <Table>
+    <Table className={className}>
       <TableCaption>
         <Typography>Таблица клиентов</Typography>
       </TableCaption>
@@ -54,9 +54,7 @@ export const UsersTable = ({}: Props) => {
               <TableCell>{user.email}</TableCell>
               <TableCell>
                 <div className="flex gap-x-3 justify-end">
-                  <Button size="sm" className="w-3">
-                    Редактировать
-                  </Button>
+                  <Button size="sm">Редактировать</Button>
                   <Button size="sm" variant="destructive">
                     Удалить
                   </Button>

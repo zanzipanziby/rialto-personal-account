@@ -3,8 +3,8 @@ import { Container } from "@/components/custom/Container";
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <Container className={"max-w-screen-xl mx-auto px-10"}>
-      {children}
-    </Container>
+    <main className={"container max-w-screen-xl mx-auto px-4 py-3"}>
+      <Container>{children}</Container>
+    </main>
   );
 }

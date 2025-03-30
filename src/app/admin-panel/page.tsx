@@ -8,7 +8,7 @@ export default function AdminPanel() {
       <Typography variant="h1" as="h1" className="text-center">
         Панель администратора
       </Typography>
-      <UsersTable />
+      <UsersTable className={"mt-12"} />
     </>
   );
 }
